@@ -9,22 +9,149 @@
   </head>
   <body>
     <!-- Главная -->
-    <section class="main">
+    <section class="main" id="home">
       <div class="main_wrapper">
         <div class="main_header container">
-          <a href="#"><img src="img/Logo.svg" alt="Waxom" /></a>
-          <button class="main_nav_open main_button">
-            <i class="fas fa-bars"></i>
-          </button>
+          <a href="#"
+            ><svg
+              class="main_logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="181"
+              height="56"
+              viewBox="0 0 181 56"
+            >
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M31.854 19.905L26.6 10.713h10.508zm-1.314.766H20.032l5.254-9.191zm2.628 0l5.254-9.191 5.254 9.191zm10.508 1.53l-5.254 9.189-5.254-9.188zm-13.136 0l-5.254 9.189-5.254-9.188zm-11.822.766l5.253 9.187H13.465zm21.02 9.187l5.252-9.187 5.253 9.187zm-2.63-22.97H26.6l5.254-9.19zm2.63 24.502h10.505l-5.253 9.188zm-26.273 0H23.97l-5.253 9.188zm-1.314.765l5.253 9.19H6.897zm34.152 9.19l5.254-9.19 5.254 9.19zm10.508 1.53l-5.254 9.188-5.254-9.187zm-13.135 0l-5.254 9.188-5.254-9.187zm-36.779 0h10.507L12.15 54.36zm-1.315.768l5.254 9.189H.33zm26.272 0l5.254 9.189H26.6zm13.136 0l5.253 9.189H39.738zm18.387 9.189H52.873l5.252-9.189z"
+                    />
+                    <path
+                      id="main-logo"
+                      fill="#fff"
+                      d="M31.854 19.905L26.6 10.713h10.508zm-1.314.766H20.032l5.254-9.191zm2.628 0l5.254-9.191 5.254 9.191zm10.508 1.53l-5.254 9.189-5.254-9.188zm-13.136 0l-5.254 9.189-5.254-9.188zm-11.822.766l5.253 9.187H13.465zm21.02 9.187l5.252-9.187 5.253 9.187zm-2.63-22.97H26.6l5.254-9.19zm2.63 24.502h10.505l-5.253 9.188zm-26.273 0H23.97l-5.253 9.188zm-1.314.765l5.253 9.19H6.897zm34.152 9.19l5.254-9.19 5.254 9.19zm10.508 1.53l-5.254 9.188-5.254-9.187zm-13.135 0l-5.254 9.188-5.254-9.187zm-36.779 0h10.507L12.15 54.36zm-1.315.768l5.254 9.189H.33zm26.272 0l5.254 9.189H26.6zm13.136 0l5.253 9.189H39.738zm18.387 9.189H52.873l5.252-9.189z"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <text
+                        id="main-logo-text"
+                        fill="#fff"
+                        dominant-baseline="text-before-edge"
+                        font-family="'Raleway','Raleway-Regular'"
+                        font-size="34"
+                        font-style="none"
+                        font-weight="400"
+                        transform="translate(66 15)"
+                      >
+                        <tspan
+                          style="font-kerning: normal"
+                          letter-spacing="-1.36"
+                        >
+                          Waxom
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg></a
+          >
+          <!-- Burger on CSS -->
+          <nav class="main_header_nav-mobile main_burger_open">
+            <label for="toggle" class="main_header_nav_burger"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <input type="checkbox" class="main_header_nav_toggle" id="toggle" />
+            <ul class="main_header_nav_menu">
+              <li><a href="#home" class="main_header_nav_list">Home</a></li>
+              <li>
+                <a href="#about-us" class="main_header_nav_list">About Us</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="main_header_nav_list">Portfolio</a>
+              </li>
+              <li>
+                <a href="#features" class="main_header_nav_list">Features</a>
+              </li>
+              <li><a href="#blog" class="main_header_nav_list">Blog</a></li>
+              <li>
+                <a href="#pricing" class="main_header_nav_list">Pricing</a>
+              </li>
+              <li>
+                <a href="#shortcodes" class="main_header_nav_list"
+                  >Shortcodes</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="main_header_nav_list">Contact</a>
+              </li>
+              <li>
+                <button class="main_button main_button_cart main_button-mobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="24"
+                    viewBox="0 0 18 24"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M17.994 5.997v14.998a3 3 0 0 1-2.999 3H3.002a3 3 0 0 1-2.999-3V5.997A2.999 2.999 0 0 1 3.002 3H4.5c0-1.657 2.013-3 4.498-3 2.484 0 4.497 1.343 4.497 3h1.5a2.999 2.999 0 0 1 2.998 2.998zM6 3h5.997c0-1.037-1.342-1.5-2.998-1.5-1.656 0-2.999.463-2.999 1.5zm10.495 16.496H1.502v1.5c0 .828.672 1.5 1.5 1.5h11.993a1.5 1.5 0 0 0 1.5-1.5zm0-13.498a1.5 1.5 0 0 0-1.5-1.5h-1.499v4.5h-1.499v-4.5H6v4.5H4.501v-4.5h-1.5a1.5 1.5 0 0 0-1.499 1.5v11.998h14.993z"
+                        />
+                        <path
+                          id="main_button_cart"
+                          fill="#fff"
+                          d="M17.994 5.997v14.998a3 3 0 0 1-2.999 3H3.002a3 3 0 0 1-2.999-3V5.997A2.999 2.999 0 0 1 3.002 3H4.5c0-1.657 2.013-3 4.498-3 2.484 0 4.497 1.343 4.497 3h1.5a2.999 2.999 0 0 1 2.998 2.998zM6 3h5.997c0-1.037-1.342-1.5-2.998-1.5-1.656 0-2.999.463-2.999 1.5zm10.495 16.496H1.502v1.5c0 .828.672 1.5 1.5 1.5h11.993a1.5 1.5 0 0 0 1.5-1.5zm0-13.498a1.5 1.5 0 0 0-1.5-1.5h-1.499v4.5h-1.499v-4.5H6v4.5H4.501v-4.5h-1.5a1.5 1.5 0 0 0-1.499 1.5v11.998h14.993z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <form action="#" class="main_search main_button-mobile">
+                  <input
+                    class="main_search_field"
+                    id="main_field"
+                    type="search"
+                  />
+                  <label for="main_field">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z"
+                          />
+                          <path
+                            id="main_button_search"
+                            fill="#fff"
+                            d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </label>
+                </form>
+              </li>
+            </ul>
+          </nav>
           <nav class="main_header_nav">
-            <a href="#" class="main_header_nav_list">Home</a>
-            <a href="#" class="main_header_nav_list">About Us</a>
-            <a href="#" class="main_header_nav_list">Portfolio</a>
-            <a href="#" class="main_header_nav_list">Features</a>
-            <a href="#" class="main_header_nav_list">Blog</a>
-            <a href="#" class="main_header_nav_list">Pricing</a>
-            <a href="#" class="main_header_nav_list">Shortcodes</a>
-            <a href="#" class="main_header_nav_list main_header_nav_list-no-pad"
+            <a href="#home" class="main_header_nav_list">Home</a>
+            <a href="#about-us" class="main_header_nav_list">About Us</a>
+            <a href="#portfolio" class="main_header_nav_list">Portfolio</a>
+            <a href="#features" class="main_header_nav_list">Features</a>
+            <a href="#blog" class="main_header_nav_list">Blog</a>
+            <a href="#pricing" class="main_header_nav_list">Pricing</a>
+            <a href="#shortcodes" class="main_header_nav_list">Shortcodes</a>
+            <a
+              href="#contact"
+              class="main_header_nav_list main_header_nav_list-no-pad"
               >Contact</a
             >
           </nav>
@@ -50,8 +177,12 @@
             </svg>
           </button>
           <form action="#" class="main_search">
-            <input class="main_search_field" id="main_field" type="search" />
-            <label for="main_field">
+            <input
+              class="main_search_field"
+              id="main_field-mobile"
+              type="search"
+            />
+            <label for="main_field-mobile">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -97,7 +228,7 @@
       </div>
     </section>
     <!-- 4 раздела -->
-    <section class="features container">
+    <section class="features container" id="features">
       <div class="features_section">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +339,7 @@
       </div>
     </section>
     <!-- Реализация идей -->
-    <section class="realization">
+    <section class="realization" id="portfolio">
       <div class="container realization_wrapper">
         <h3 class="realization_title">Waxom is Realization of your Ideas.</h3>
         <p class="realization_text">
@@ -230,7 +361,7 @@
       </div>
     </section>
     <!-- Покупка Waxom -->
-    <section class="theme">
+    <section class="theme" id="pricing">
       <div class="theme_wrapper container">
         <div class="theme_content">
           <h3 class="theme_title">
@@ -245,7 +376,7 @@
       </div>
     </section>
     <!-- Последние проекты -->
-    <section class="projects container">
+    <section class="projects container" id="blog">
       <h3 class="projects_title">Our Latest Projects.</h3>
       <p class="projects_text">
         Investigationes demonstraverunt lectores legere me lius quod ii legunt
@@ -623,7 +754,7 @@
       </div>
     </section>
     <!-- Посты -->
-    <section class="posts container">
+    <section class="posts container" id="shortcodes">
       <h3 class="posts_title">Recent Posts.</h3>
       <p class="posts_text">
         Investigationes demonstraverunt lectores legere me lius quod ii legunt
@@ -699,10 +830,54 @@
       </div>
     </section>
     <!-- О нас -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us_wrapper container">
         <section class="about-us_desc about-us_section">
-          <a href="#"><img src="img/Logo.svg" alt="Waxom" /></a>
+          <a href="#"
+            ><svg
+              class="about-us_logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="181"
+              height="56"
+              viewBox="0 0 181 56"
+            >
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M31.854 19.905L26.6 10.713h10.508zm-1.314.766H20.032l5.254-9.191zm2.628 0l5.254-9.191 5.254 9.191zm10.508 1.53l-5.254 9.189-5.254-9.188zm-13.136 0l-5.254 9.189-5.254-9.188zm-11.822.766l5.253 9.187H13.465zm21.02 9.187l5.252-9.187 5.253 9.187zm-2.63-22.97H26.6l5.254-9.19zm2.63 24.502h10.505l-5.253 9.188zm-26.273 0H23.97l-5.253 9.188zm-1.314.765l5.253 9.19H6.897zm34.152 9.19l5.254-9.19 5.254 9.19zm10.508 1.53l-5.254 9.188-5.254-9.187zm-13.135 0l-5.254 9.188-5.254-9.187zm-36.779 0h10.507L12.15 54.36zm-1.315.768l5.254 9.189H.33zm26.272 0l5.254 9.189H26.6zm13.136 0l5.253 9.189H39.738zm18.387 9.189H52.873l5.252-9.189z"
+                    />
+                    <path
+                      id="about-logo"
+                      fill="#fff"
+                      d="M31.854 19.905L26.6 10.713h10.508zm-1.314.766H20.032l5.254-9.191zm2.628 0l5.254-9.191 5.254 9.191zm10.508 1.53l-5.254 9.189-5.254-9.188zm-13.136 0l-5.254 9.189-5.254-9.188zm-11.822.766l5.253 9.187H13.465zm21.02 9.187l5.252-9.187 5.253 9.187zm-2.63-22.97H26.6l5.254-9.19zm2.63 24.502h10.505l-5.253 9.188zm-26.273 0H23.97l-5.253 9.188zm-1.314.765l5.253 9.19H6.897zm34.152 9.19l5.254-9.19 5.254 9.19zm10.508 1.53l-5.254 9.188-5.254-9.187zm-13.135 0l-5.254 9.188-5.254-9.187zm-36.779 0h10.507L12.15 54.36zm-1.315.768l5.254 9.189H.33zm26.272 0l5.254 9.189H26.6zm13.136 0l5.253 9.189H39.738zm18.387 9.189H52.873l5.252-9.189z"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <text
+                        id="about-logo-text"
+                        fill="#fff"
+                        dominant-baseline="text-before-edge"
+                        font-family="'Raleway','Raleway-Regular'"
+                        font-size="34"
+                        font-style="none"
+                        font-weight="400"
+                        transform="translate(66 15)"
+                      >
+                        <tspan
+                          style="font-kerning: normal"
+                          letter-spacing="-1.36"
+                        >
+                          Waxom
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg></a
+          >
           <p class="about-us_desc_text">
             Lorem ipsum dolor sit amet, consec&shy;tetuer adipiscing elit, sed
             diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -713,51 +888,63 @@
         </section>
         <section class="about-us_posts about-us_section">
           <h3 class="about-us_title">Recent Posts</h3>
-          <div class="about-us_posts_comment">
+          <a href="#" class="about-us_posts_comment">
             <p class="about-us_posts_comment_data">September 08, 2015</p>
-            <p class="about-us_posts_comment_text">
+            <p
+              class="about-us_posts_comment_text about-us_posts_comment_text-botline"
+            >
               Lorem ipsum dolor sit amet, consec&shy;tetuer adipiscing elit
             </p>
-          </div>
-          <div class="about-us_posts_comment about-us_posts_comment_center">
+          </a>
+          <a href="#" class="about-us_posts_comment">
             <p class="about-us_posts_comment_data">September 08, 2015</p>
-            <p class="about-us_posts_comment_text">
+            <p
+              class="about-us_posts_comment_text about-us_posts_comment_text-botline"
+            >
               Diam nonummy nibh euismod tincid&shy;unt ut laoreet dolore magna
             </p>
-          </div>
-          <div class="about-us_posts_comment">
+          </a>
+          <a href="#" class="about-us_posts_comment">
             <p class="about-us_posts_comment_data">September 08, 2015</p>
             <p class="about-us_posts_comment_text">
               Claritas est etiam processus dynamic&shy;us, qui sequitur
               mutationem per seac&shy;ula quarta decima
             </p>
-          </div>
+          </a>
         </section>
         <section class="about-us_twitter about-us_section">
           <h3 class="about-us_title">Our Twitter</h3>
-          <div class="about-us_twitter_section">
+          <a href="#" class="about-us_twitter_section">
             <p class="about-us_twitter_section_text">
               <span class="about-us_twitter_section_author">@waxom</span>
               Cum soluta nobis eleifend option congue nihil imperdiet doming
             </p>
-            <p class="about-us_posts_twitter_data">3 mins ago</p>
-          </div>
-          <div class="about-us_twitter_section about-us_posts_comment_center">
+            <p
+              class="about-us_posts_twitter_data about-us_posts_comment_text-botline"
+            >
+              3 mins ago
+            </p>
+          </a>
+          <a href="#" class="about-us_twitter_section">
             <p class="about-us_twitter_section_text">
               Mirum est
               <span class="about-us_twitter_section_author">#envato</span>
               notare quam littera gothica, quam nunc putamus parum anteposuerit
               litterarum
             </p>
-            <p class="about-us_posts_twitter_data">5 hours ago</p>
-          </div>
-          <div class="about-us_twitter_section">
+            <p
+              class="about-us_posts_twitter_data about-us_posts_comment_text-botline"
+            >
+              5 hours ago
+            </p>
+          </a>
+          <a href="#" class="about-us_twitter_section">
             <p class="about-us_twitter_section_text">
               Soluta nobis option
               <span class="about-us_twitter_section_site">bit.ly/1Hniso7</span>
             </p>
             <p class="about-us_posts_twitter_data">20 days ago</p>
-          </div>
+          </a>
         </section>
         <section class="about-us_widget about-us_section">
           <h3 class="about-us_title">Dribbble Widget</h3>
@@ -779,7 +966,7 @@
       </div>
     </section>
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container footer_wrapper">
         <div class="footer_copy-and-author">
           <p>
