@@ -121,7 +121,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 93vw;
+  width: 95vw;
 }
 
 .main_header_nav-mobile .main_header_nav_menu {
@@ -1624,6 +1624,16 @@
   .footer_author_text {
     border: 0;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main_search_field {
+    top: 50px;
+    left: -50px;
+  }
+  .main_search_field:focus {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
